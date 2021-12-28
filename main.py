@@ -680,7 +680,7 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 infp_title = tkinter.PhotoImage(file="assets/infp.png")
 infp_label = tkinter.Label(infp_frame, image=infp_title)
-infp_label.place(x=45, y=100)
+infp_label.place(x=27, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(infp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
