@@ -320,9 +320,9 @@ def go_main() :
 
 #------------------------------------------------------------------------
 # font 설정
-font_main = font.Font(family = "Arial", size = 14, weight = "bold")
-font_small_title = font.Font(family = "Arial", size = 12)
-font_text = font.Font(family = "Arial", size = 10)
+font_main = font.Font(family = "을유1945", size = 14, weight = "bold")
+font_small_title = font.Font(family = "을유1945", size = 12)
+font_text = font.Font(family = "을유1945", size = 10)
 # -------------------------- 시작 화면 디자인 -------------------------
 # 타이틀 이미지 배치
 title_photo = tkinter.PhotoImage(file="assets/title.png")
@@ -680,13 +680,13 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 infp_title = tkinter.PhotoImage(file="assets/infp.png")
 infp_label = tkinter.Label(infp_frame, image=infp_title)
-infp_label.place(x=27, y=100)
+infp_label.place(x=25, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(infp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-infp_info = tkinter.Label(infp_frame, text="", font = font_small_title)
-infp_info.place(x=25, y= 190)
+infp_info = tkinter.Label(infp_frame, text="처음 만날 때는 조용하고 과묵해보여요.\n하지만 친해지면 따뜻한 마음을 가진 걸 알 수 있어요.\n\n낭만적인 자신만의 내적 신념이 있어요.\n주변에 휘둘리지 않고 내 신념을 지켜요.\n굳이 안 맞는 사람들과 단체 생활을 하는 것보다\n차라리 마음 맞는 사람끼리 각자 지내는 게 좋아요.\n이해심이 많고 관대한 성격이에요.\n\n싸우는 건 싫어요.\n모두가 조화롭게 잘 지냈으면 좋겠어요.\n\n\n✔ 학교에서 내 모습은?\n조용하고 속을 알 수 없다는 이야기를 종종 들어요.\n하지만 친해지면 특유의 온화한 성격과\n 창의력, 상상력으로 주변을 즐겁게 해요.\n단체나 그룹 활동을 하는 것보다 혼자 다니는 게 편해요.\n굳이 단체 생활을 하려 하기 보다는\n주로 혼자 다녀요.", font = font_small_title)
+infp_info.place(x=15, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(infp_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
@@ -707,7 +707,7 @@ enfj_label.place(x=40, y=100)
 title_name_text = tkinter.Label(enfj_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-enfj_info = tkinter.Label(enfj_frame, text="", font = font_small_title)
+enfj_info = tkinter.Label(enfj_frame, text="사람 만나는 걸 좋아하며 사교성이 좋아요.\n모임을 좋아하고 대화를 적극적으로 이끌어나가요.\n\n모든 사람은 존중받아야 마땅하고,\n사람들 모두 좋은 점(장점)이 많아요.\n그래서 다같이 조화롭게 지냈으면 좋겠어요.\n\n다른 사람들 말에 귀 기울이고, 관심이 많아요.\n감정적인 공감을 잘 하고, 연민을 잘 느껴요.\n\n열정적이고 책임감이 있어요.\n더 나은 미래를 만들기 위해 노력하려고 해요.\n\n\n✔ 학교에서 내 모습은?\n뭐든 열심히 하려고 해요.\n맡은 일은 앞장서서 해결하고, 끝까지 해내려 해요.\n사람들과 만나는 것을 좋아하고,\n 사람들을 이끄는 카리스마가 있어요.", font = font_small_title)
 enfj_info.place(x=25, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(enfj_frame, image=restest_button_photo, command=go_main)
@@ -729,7 +729,7 @@ enfp_label.place(x=15, y=100)
 title_name_text = tkinter.Label(enfp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-enfp_info = tkinter.Label(enfp_frame, text="", font = font_small_title)
+enfp_info = tkinter.Label(enfp_frame, text="항상 활기차고 긍정적인 모습이에요.\n사교적이고 활발해서 사람을 만나는 걸 좋아해요.\n유머 감각이 넘치고 다른 사람들을 웃게 해줘요.\n\n감수성이 풍부해요. 감정이 다양해서 자주 바뀌어요.\n그리고 감정이 얼굴에 잘 드러나는 편이에요.\n슬프거나 힘들 때도 있지만 금방 훌훌 털고 일어나요.\n\n활발한 성격만큼 다양한 일에 도전하는 걸 좋아해요.\n하지만 일을 많이 벌이다 보니 힘들 때도 있어요.\n그래도 해야하는 일에는 열정적으로 임해요.\n\n\n✔ 학교에서 내 모습은?\n다양한 일에 도전하고 노력하는 모습이 보여요.\n활발한 에너지 덕분에 사람들도 자주 만나고,\n술 약속도 많아요. 인싸 기질이 다분해요.\n하지만 가끔 할 일이 벅차기도 해요.\n작심 3일인 경우도 있고, 벼락치기도 종종 해요.", font = font_small_title)
 enfp_info.place(x=25, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(enfp_frame, image=restest_button_photo, command=go_main)
@@ -746,13 +746,13 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 istj_title = tkinter.PhotoImage(file="assets/istj.png")
 istj_label = tkinter.Label(istj_frame, image=istj_title)
-istj_label.place(x=15, y=100)
+istj_label.place(x=40, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(istj_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-istj_info = tkinter.Label(istj_frame, text="", font = font_small_title)
-istj_info.place(x=25, y= 190)
+istj_info = tkinter.Label(istj_frame, text="낯가림이 심하고 속을 알 수 없는 성격이에요.\n튀는 걸 별로 안 좋아해요. 단정하고 무난한 게 좋아요.\n\n매우매우 계획적이에요.\n갑작스러운 계획의 변화는 싫어요.\n갑자기 계획이 흐트러지는 걸 좋아하지 않아요.\n\n원칙주의자예요. 규범, 전통, 질서는 중요해요.\n어떤 일을 할 때 원리, 원칙에 따라 행동해요.\n의젓하고 책임감이 있어요.\n\n\n✔ 학교에서 내 모습은?\n어떤 일을 할 때 체계적이고 정확하게 기억하고,\n신중하게 임해요. 덕분에 좋은 성적을 잘 받아요.\n원리, 원칙을 중요하게 여겨서 깐깐해보여요.\n규칙을 잘 지키고, 무난한 걸 좋아해요.\n그래서 대학 생활도 무난하게,\n조용하게 보내고 싶어요.", font = font_small_title)
+istj_info.place(x=20, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(istj_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
@@ -773,7 +773,7 @@ isfj_label.place(x=47, y=100)
 title_name_text = tkinter.Label(isfj_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-isfj_info = tkinter.Label(isfj_frame, text="", font = font_small_title)
+isfj_info = tkinter.Label(isfj_frame, text="조용하고 온화한 성격이에요.\n항상 차분함을 잃지 않아요.\n\n인내심이 뛰어나요.\n상대방에게 잘 맞춰주는 성격이에요.\n공감 능력이 좋아서 리액션도 풍부해요.\n하지만 내 이야기를 하는 건 별로 좋아하지 않아요.\n\n상대방의 입장을 많이 고려해서 행동해요.\n싸우거나 갈등이 일어나는 걸 별로 좋아하지 않아요.\n\n매우 계획적이에요.\n계획은 아주 꼼꼼하게, 치밀하게 짜요.\n\n\n✔ 학교에서 내 모습은?\n조용하고 온화한 모습이 안정감을 줘요.\n상대방에게 대부분 잘 맞춰주고, 공감을 잘 해줘요.\n하지만 영혼 없는 리액션을 할 때도 많아요.", font = font_small_title)
 isfj_info.place(x=25, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(isfj_frame, image=restest_button_photo, command=go_main)
@@ -790,13 +790,13 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 estj_title = tkinter.PhotoImage(file="assets/estj.png")
 estj_label = tkinter.Label(estj_frame, image=estj_title)
-estj_label.place(x=12, y=100)
+estj_label.place(x=7, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(estj_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-estj_info = tkinter.Label(estj_frame, text="", font = font_small_title)
-estj_info.place(x=25, y= 190)
+estj_info = tkinter.Label(estj_frame, text="현실 감각이 매우 뛰어나요.\n어떤 일을 조직하고 추진하는 능력이 있어요.\n타고난 지도자로, 일을 지시하고 실현하는 능력이 있어요.\n언뜻 보면 무게감 있고 엄격한 선배처럼 보여요.\n\n현실적이고 구체적으로 생각하는 걸 좋아해요.\n사람보다는 업무나 일에 관련해서 생각하는 편이에요.\n\n미래를 생각하기보다 현재를 중요하게 여겨요.\n그래서 매우 현실적으로 생각하고,\n실용적인 걸 좋아해요.\n\n\n✔ 학교에서 내 모습은?\n원칙을 중요하게 생각하고 깐깐하게 보일 수 있어요.\n하지만 일을 추진하고 지도하는 능력이 있어요.\n학교에서는 이미 한 자리를 꿰찼어요.\n리더십이 있고 철저한, 엄격한 성격이이에요.\n조직적인 문화와 잘 어울려요.", font = font_small_title)
+estj_info.place(x=8, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(estj_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
@@ -817,8 +817,8 @@ esfj_label.place(x=45, y=100)
 title_name_text = tkinter.Label(esfj_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-esfj_info = tkinter.Label(esfj_frame, text="", font = font_small_title)
-esfj_info.place(x=25, y= 190)
+esfj_info = tkinter.Label(esfj_frame, text="사회성이 좋고, 사교적이에요.\n다른 사람에게 관심을 쏟는 걸 좋아하고,\n대화를 나누는 걸 좋아해요. 그리고 배려가 넘쳐요.\n\n사람들을 잘 다루고, 감정적으로 공감을 잘 해줘요.\n동정심이 많아 사람들을 도와주는 걸 좋아해요.\n\n조화와 균형을 중요하게 여겨요.\n위계질서가 무너지는 건 좋아하지 않아요.\n인내심이 뛰어나고, 뭐든 이해하려고 하는 편이에요.\n\n완벽주의 경향이 있어요. 계획 짜는 걸 좋아해요.\n과정을 중요하게 생각하고, 조직적인 걸 좋아해요.\n\n\n✔ 학교에서 내 모습은?\n다른 사람을 잘 도와주고 공감해줘요.\n싹싹하고 포용력이 있어요. 타인의 호감을 잘 이끌어내요.\n성실하고 해야 하는 일에 대해서는 최선을 다해요.", font = font_small_title)
+esfj_info.place(x=10, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(esfj_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
@@ -834,12 +834,12 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 istp_title = tkinter.PhotoImage(file="assets/istp.png")
 istp_label = tkinter.Label(istp_frame, image=istp_title)
-istp_label.place(x=29, y=100)
+istp_label.place(x=22, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(istp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-istp_info = tkinter.Label(istp_frame, text="", font = font_small_title)
+istp_info = tkinter.Label(istp_frame, text="가능하면 혼자 지내는 걸 선호해요.\n특별한 일이 아니면 인간 관계에 연연하지 않아요.\n하지만 필요할 때는 사교적으로 행동할 수 있어요.\n\n틀에 박힌 걸 좋아하지 않아요.\n내 주관이 뚜렷해서 다른 사람에게 휘둘리지 않아요.\n타인에게도 무관심한 편이에요.\n\n효율을 매우 중요하게 여겨요.\n무슨 일을 하든 효율을 먼저 생각해요.\n\n관심 있는 분야에만 열중해요.\n별로 내가 관심 없는 곳에 힘쓰고 싶지 않아요.\n\n\n✔ 학교에서 내 모습은?\n사교적이고 활발한 것 같지만 혼자 있는 걸 좋아해요.\n틀에 박힌 걸 싫어해서 다소 모험적인 활동을 즐겨요.\n하기 싫은 시험이나 공부같은 건 몰아서 해요.", font = font_small_title)
 istp_info.place(x=25, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(istp_frame, image=restest_button_photo, command=go_main)
@@ -856,13 +856,13 @@ logo_label.place(x=160, y=10)
 # 유형 타이틀
 isfp_title = tkinter.PhotoImage(file="assets/isfp.png")
 isfp_label = tkinter.Label(isfp_frame, image=isfp_title)
-isfp_label.place(x=5, y=100)
+isfp_label.place(x=2, y=100)
 # 타이틀 텍스트 
 title_name_text = tkinter.Label(isfp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-isfp_info = tkinter.Label(isfp_frame, text="", font = font_small_title)
-isfp_info.place(x=25, y= 190)
+isfp_info = tkinter.Label(isfp_frame, text="웬만해서는 친한 사람이 아니면 자신을 잘 안 드러내요.\n내성적인 성격이고, 조용해요.\n처음에는 최대한 친절하고 온화한 모습을 보여줘요.\n\n혼자만의 시간을 즐기고,\n자신만의 영역을 침범하는 걸 좋아하지 않아요.\n규칙적인 건 싫어요. 자유로운 게 좋아요.\n\n주변 사람에는 크게 관심 없지만,\n공감을 잘 하고 배려하려고 노력해요.\n\n독립적이고 내가 하고 싶은 일에 열정적으로 임해요.\n하지만 무언가를 꾸준히 하기 보다는 몰아서 해요.\n\n\n✔ 학교에서 내 모습은?\n뭐 하고 있냐고 물어보면 항상 집이에요.\n본인은 아니라고 하지만 엄청 착해요.\n친해지면 솔직하고 직설적인 모습을 볼 수 있어요.", font = font_small_title)
+isfp_info.place(x=15, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(isfp_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
@@ -905,8 +905,8 @@ esfp_label.place(x=45, y=100)
 title_name_text = tkinter.Label(esfp_frame, text="당신의 유형은", font = font_small_title)
 title_name_text.place(x=30, y=95)
 # 유형 설명 텍스트
-esfp_info = tkinter.Label(esfp_frame, text="", font = font_small_title)
-esfp_info.place(x=25, y= 190)
+esfp_info = tkinter.Label(esfp_frame, text="매우매우 사교적이고 활동적이에요.\n센스와 유머 감각이 매우매우 뛰어나요.\n말도 재미있게 잘 하고, 주변 사람을 즐겁게 만들어요.\n나의 이야기 보따리를 주변에 잘 푸는 성격이에요.\n\n인생이 뭐 있나요? 즐겁게 살아야죠!\n계획적인 건 답답해요. 자유로운 생활이 좋아요.\n\n조직적이고 계획적인 답답한 상황보다는\n자유로울 때 더 일이 잘 돼요.\n\n분위기 띄우는 건 정말 자신 있어요.\n혼자 있는 것보다는 다른 사람들과 함께 있는 게 좋아요.\n\n\n✔ 학교에서 내 모습은?\n항상 즐거운 이야기로 주변을 행복하게 해요.\n사람들이 날 보면 기분이 좋아진대요.\n항상 사람들에게 둘러싸여 있고, 인기가 많아요.", font = font_small_title)
+esfp_info.place(x=15, y= 190)
 # 처음으로 돌아가는 버튼 배치
 restest_button = tkinter.Button(esfp_frame, image=restest_button_photo, command=go_main)
 restest_button.place(x=100, y=580)
