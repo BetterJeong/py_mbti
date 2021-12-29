@@ -333,7 +333,7 @@ text_label = tkinter.Label(main_frame, text="이 테스트는 정식 검사가 �
 text_label.place(x=75, y=330)
 # 시작 버튼 배치
 start_photo = tkinter.PhotoImage(file="assets/startButton.png")
-start_button = tkinter.Button(main_frame, image=start_photo, command=set_frame_q1)
+start_button = tkinter.Button(main_frame, image=start_photo, bd=0, command=set_frame_q1)
 start_button.place(x=110, y=420)
 # 하단 footer 배치
 author_label = tkinter.Label(main_frame, text="제작: 한성대학교 IT공과대학 2171110 나은정", font = font_text)
@@ -349,8 +349,8 @@ logo_label.place(x=160, y=10)
 q01_label = tkinter.Label(q1_frame, text="1. 길었던 수험 생활이 끝나고\n한성대학교 학생이 되었다. 신입생인 나는?", font = font_main)
 q01_label.place(x=20, y=200)
 # 답변 버튼 배치
-answer_E_button = tkinter.Button(q1_frame, text="새로운 사람들을 만나고 친해질\n생각에 설렌다.", font = font_main, command=q1_E)
-answer_I_button = tkinter.Button(q1_frame, text="대학에는 어떤 사람들이 있을지\n걱정되고 떨린다.",font = font_main, command=q1_I)
+answer_E_button = tkinter.Button(q1_frame, text="새로운 사람들을 만나고 친해질\n생각에 설렌다.", bd=0, background = "#BEEFFF", activebackground = "#C8FFFF", font = font_main, command=q1_E)
+answer_I_button = tkinter.Button(q1_frame, text="대학에는 어떤 사람들이 있을지\n걱정되고 떨린다.", bd=0, background = "#BEEFFF", activebackground = "#C8FFFF", font = font_main, command=q1_I)
 answer_E_button.place(x=60, y=320)
 answer_I_button.place(x=60, y=400)
 # 하단 footer 배치
