@@ -295,8 +295,8 @@ def send_result() :
         isfp_frame.tkraise()
     elif (result_mbti[0] == "E" and result_mbti[1] == "S" and result_mbti[2] == "T" and result_mbti[3] == "P") :
         estp_frame.tkraise()
-    elif (result_mbti[0] == "E" and result_mbti[1] == "S" and result_mbti[2] == "T" and result_mbti[3] == "P") :
-        estp_frame.tkraise()
+    elif (result_mbti[0] == "E" and result_mbti[1] == "S" and result_mbti[2] == "F" and result_mbti[3] == "P") :
+        esfp_frame.tkraise()
 #------------------------------------------------------------------------
 
 #------------------------ 첫 화면으로 돌아가는 함수 ---------------------
